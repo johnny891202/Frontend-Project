@@ -678,6 +678,10 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
       background-color: rgb(0, 120, 231);
       color: #fff;
   }
+  .btn-danger{
+    background: red;
+    color: white;
+  }
   
   /* Button Groups */
   .btn-group .btn {
