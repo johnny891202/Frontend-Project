@@ -1,0 +1,21 @@
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.order{
+    width: 100%;
+}
+.order th,.order td{
+    border: 1px solid green;
+    padding: 5px;
+    text-align: center;
+}
+.order th{
+    background: green;
+    color: white;
+}
+@media(max-width:768px){
+    .m-none{
+        display: none;
+    }
+}
