@@ -1,0 +1,58 @@
+.wrap{
+    width: 500px;
+    margin: 0 auto;
+}
+.header{
+    height: 80px;
+    background: pink;
+}
+.menu{
+    float: right;
+    list-style: none;
+}
+.menu li{
+    float: left;
+}
+.menu a{
+    width: 30px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+.menu a:hover{
+    background: gray;
+    color: white;
+}
+.content p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
+.ad{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100px;
+    background: black;
+    color: white;
+}
+.ad p{
+    padding: 30px;
+}
+.ad .ad-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    background: red;
+    color: white;
+    padding: .5em;
+}
+.ad .ad-close:hover{
+    background: pink;
+}

@@ -1,0 +1,321 @@
+/* 全域設定 */
+a{
+    text-decoration: none;
+}
+.wrap{
+    width: 1920px;
+    margin: 0 auto;
+}
+/* 社群連結 */
+.topbar{
+    background: #F6F6F8;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 405px;
+}
+.topbar li{
+    margin-left: 12px;
+}
+.topbar li:hover{
+    opacity: 0.5; /* 透明效果 */
+}
+.topbar .twitter{
+    border-left: 2px solid #CCCCCC;
+    padding-left: 12px;
+}
+.topbar img{
+    margin-right: 5px;
+}
+.topbar a{
+    text-decoration: none;
+    color: #4267B2;
+    line-height: 24px;
+}
+.topbar .twitter a{
+    color: #1DA1F2;
+}
+/* LOGO */
+.header{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 415px 0 400px;
+    background: white;
+}
+.header h1 a{
+    background-image: url(../images/hexschool-logo.png);
+    display: block;
+    width: 150px;
+    height: 36px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.header h1 a:hover{
+    opacity: 0.5;
+}
+/* 選單 */
+.header .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header .menu li{
+    position: relative;
+}
+.header .menu a{
+    color: #00CC99;
+    padding:20px;
+    font-weight: 700;
+    background: white;
+    display: block;
+    border-bottom: 4px solid transparent;
+}
+
+.header .menu .dropdown-open a:hover{
+    opacity: 0.3;
+    background:#00CC99;
+    color: black;
+}
+.header .menu a:hover, .dropdown.active{
+    border-bottom: 4px solid #00CC99;
+}
+.menu ul{
+    display: none;
+    position: absolute;
+    background: #ffffffe0;
+}
+/* 橫幅 */
+.swiper{
+    position: relative;
+    height: 390px;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-word{
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.15)
+}
+.swiper-slide h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+    color: black;
+    padding: 25px 0 25px 500px;
+}
+.banner-word .white{
+    color: white;
+}
+.swiper-pagination{
+    color: white;
+    scale: 1.5;
+}
+.swiper-pagination-bullet{
+    background: white;
+    opacity: 0.7;
+}
+.swiper-pagination-bullet-active{
+    cursor: pointer;
+    background: #00CC99;
+}
+.swiper-button-prev,.swiper-button-next{
+    color: #00CC99;
+}
+.swiper-button-prev:hover,.swiper-button-next:hover{
+    opacity: 0.5;
+}
+/* 課程介紹 */
+.course-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.course-list .html a,.course-list .rwd a{
+    display: block;
+    padding: 0 129px 0 129px;
+}
+.course-list h3{
+    font-family: Microsoft JhengHei UI;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.html,.rwd,.jquery{
+    width: 350px;
+    margin: 0px 15px;
+    box-shadow: 0px 3px 5px #dbdbdb;
+    border-radius: 5px;
+}
+.html,.rwd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.html{
+    padding: 20px;
+}
+.html h3{
+    margin-top: 11.55px;
+}
+.html p{
+    margin-top: 12px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+.rwd{
+    padding: 25px 20px 20px 20px;
+}
+.rwd h3{
+    margin-top: 2px;
+    text-align: center;
+}
+.rwd p{
+    margin-top: 12px;
+    line-height: 24px;
+    letter-spacing: 2.25px;
+}
+
+.jquery img{
+    margin-top: 68px;
+    margin-left: 28px;
+}
+.jquery h3{
+    margin-top: 43px;
+    text-align: center;
+}
+.jquery p{
+    margin: 12px 20px 5px 20px;
+}
+.jquery ul li{
+    list-style: disc;
+    margin-left: 40px;
+    line-height: 24px;
+}
+/* 表格 */
+.difference{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0 60px 0;
+}
+.difference h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+.difference table{
+    width: 920px;
+    line-height: 24px;
+}
+.difference th{
+    text-align: left;
+}
+.difference tr{
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+.difference thead tr{
+    background-color: #f7f7f7;
+}
+.difference tbody tr:hover{
+    background-color: #f5fffa;
+}
+.difference th, .difference td{
+    padding: 6px 0 6px 10px;
+}
+.difference th{
+    font-weight: bold;
+}
+.difference .highlight{
+    font-weight: 700;
+    color: #00CC99;
+}
+/* 表單 */
+.contact{
+    background-image: url(../images/Rectangle\ 8.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.information{
+    display: flex;
+    margin: 28px 0 32px 0;
+}
+
+.contact h3{
+    margin-top: 36px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #00251A;
+    text-align: center;
+}
+.information form{
+    margin-right: 30px;
+}
+.information label{
+    display: block;
+    line-height: 19px;
+    margin-bottom: 8px;
+    color: #00251A;
+}
+.information input{
+    width: 351px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 6px 0 6px 10px;
+    margin-bottom: 16px;
+    border: 1px solid #AAAAAA;
+    border-radius: 3px;
+}
+.information .message textarea{
+    width: 350px;
+    height: 200px;
+    resize: none;
+    border: 1px solid #AAAAAA;
+    border-radius: 3px;
+}
+.contact .btn{
+    background: #00251A;
+    color: white;
+    padding: 10px 65px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+.contact .btn:hover{
+    opacity: 0.8;
+}
+/* 表尾 */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 405px 16px 405px;
+}
+.contact-info{
+    line-height: 24px;
+}
+.contact-info a{
+    text-decoration: none;
+    color: #00CC99;
+}
+/* 回到頂端 */
+.to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #00CC99;
+    display: none;
+}

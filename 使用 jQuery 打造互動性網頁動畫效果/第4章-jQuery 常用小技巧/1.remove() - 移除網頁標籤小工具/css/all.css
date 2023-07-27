@@ -1,0 +1,9 @@
+body{
+    width: 500px;
+}
+table{
+    margin: 5px auto;
+}
+td{
+    border: 1px solid gray;
+}

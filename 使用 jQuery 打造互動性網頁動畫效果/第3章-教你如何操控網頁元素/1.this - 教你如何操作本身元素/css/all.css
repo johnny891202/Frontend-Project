@@ -1,0 +1,14 @@
+.menu{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.menu li{
+    border: 1px solid black;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.menu li:hover, .menu li.active{
+    background: gray;
+    color: white;
+}

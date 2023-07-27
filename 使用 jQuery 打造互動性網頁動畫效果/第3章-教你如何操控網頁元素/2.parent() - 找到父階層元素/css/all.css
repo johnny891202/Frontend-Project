@@ -1,0 +1,28 @@
+.cart{
+    width: 300px;
+    margin: 20px auto;
+}
+.cart h2{
+    margin-bottom: 5px;
+    font-size: 19px;
+}
+.cart li{
+    border: 1px solid gray;
+    padding: 5px;
+    margin-bottom: 2em;
+}
+.cart li.active{
+    background: gray;
+    color: white;
+}
+.addCart{
+    background:black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.addCart:hover ,.addCart.active{
+    background: darkcyan;
+    color: white;
+}

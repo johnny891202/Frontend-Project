@@ -1,0 +1,26 @@
+a{
+    text-decoration: none;
+}
+.list{
+    width: 500px;
+    margin: 20px auto;
+}
+.list >li{
+    margin-bottom: 1em;
+}
+.list > li > a{
+    color: black;
+    border: 1px solid gray;
+    display: block;
+    padding: 5px;
+}
+.list > li > a:hover, .list > li >a.active{
+    background: gray;
+    color: white;
+}
+.list >li li{
+    margin: 5px 0;
+}
+.list ul{
+    display: none;
+}

@@ -1,0 +1,21 @@
+.question-list{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.question{
+    margin-bottom: 5px;
+}
+.question h3{
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 18px;
+}
+.question p{
+    padding: 5px;
+    display: none;
+}
+.question h3:hover, .question h3.active{
+    background: gray;
+    color: black;
+}
