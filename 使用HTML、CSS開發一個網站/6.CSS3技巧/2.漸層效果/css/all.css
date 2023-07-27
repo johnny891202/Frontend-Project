@@ -1,0 +1,5 @@
+.box{
+    width: 1002px;
+    height: 405px;
+    background: linear-gradient(to right,red,yellow);/* 漸層效果 */
+}

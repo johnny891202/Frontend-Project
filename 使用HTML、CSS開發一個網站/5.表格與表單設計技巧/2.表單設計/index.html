@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <form action="index.html">
+        <label for="mail"> 電子郵件:</label>
+        <input type="text" name="mail" id="mail" placeholder="請輸入郵件">
+        <label for="person">姓名:</label>
+        <input type="text" name="person" id="person" placeholder="請輸入姓名">
+        <input type="submit" value="送出">
+    </form>
+
+    <form action="index.html">
+        <h2>性別</h2>
+        <input type="radio" name="sex" value="male">男生 <!-- radio單選 -->
+        <input type="radio" name="sex" value="female">女生
+
+        <h2>興趣</h2>
+        <input type="checkbox" name="hobby" value="movie">看電影<!-- checkbox多選 -->
+        <input type="checkbox" name="hobby" value="music">聽音樂
+        <input type="checkbox" name="hobby" value="comic">看漫畫
+        <br>
+        <input type="submit" value="送出">
+    </form>
+
+    <form action="index.html">
+        <select name="birth">
+            <option value="1900">1900</option>
+            <option value="1901">1901</option>
+            <option value="1902">1902</option>
+        </select>
+        <h2>自我介紹:</h2>
+        <textarea name="content" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="送出">
+    </form>
+</body>
+</html>

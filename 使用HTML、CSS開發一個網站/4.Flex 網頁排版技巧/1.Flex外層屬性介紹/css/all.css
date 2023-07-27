@@ -1,0 +1,64 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css start */
+/* flex特性: 1.裡面的元素寬度會依照父元素自動調整比例 2.每個元素會預設等高*/
+.container{
+    background: #004466;
+    width: 500px;
+    margin: 0 auto;
+	padding: 10px;
+	display: flex;
+	flex-direction: row; /*row預設左到右 row-reverse反向 column上到下 column-reverse */
+	justify-content: space-around;/* flex-start對齊主軸最前端 flex-end對齊主軸線最末端 center對齊主軸線中央 space-around平均分配寬度和間距 space-between平均分配寬度，第一項和最後一項貼齊邊緣 space-evenly*/
+	align-items: flex-start;/* flex-start 對齊交錯軸最前端 flex-end對齊交錯軸最末端 center對齊交錯軸線中央 stretch預設值 baseline對齊內容物的基線*/
+}
+.item{
+    width: 100px;
+    background: #00ffa2;
+    color: #004466;
+    font-size: 36px;
+    text-align: center;
+	margin: 10px;
+}
