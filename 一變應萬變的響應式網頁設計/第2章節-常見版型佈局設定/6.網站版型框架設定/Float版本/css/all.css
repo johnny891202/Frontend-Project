@@ -1,0 +1,135 @@
+/* 全域設定 */
+a{
+	text-decoration: none;
+}
+
+.wrap{
+	max-width: 960px;
+	margin: 0 auto;
+}
+.header{
+	position: relative;
+	height: 350px;
+}
+@media(max-width:768px){
+	.header{
+		height: auto;
+	}
+}
+/* 公司LOGO */
+.logo{
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+.logo a{
+	display: block;
+	width: 250px;
+	height: 250px;
+	background: url(../images/M1.png);
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+@media(max-width:768px){
+	.logo{
+		position: relative;
+		margin: 0 auto;
+		width: 150px;
+	}	
+	.logo a{
+		width: 150px;
+		height: 170px;
+		background: url(../images/M2.png) no-repeat;
+	}
+}
+/* 選單 */
+.menu{
+	float: right;
+	margin-top: 30px;
+}
+.menu li{
+	float: left;
+	background: #3399FF;
+	border-right: 1px solid white;
+}
+.menu li a{
+	color: white;
+	display: block;
+	width: 100px;
+	font-weight: bold;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+@media(max-width:768px){
+	.menu{
+		float: none;
+	}
+	.menu li{
+		width: 90%;
+		float: none;
+		margin: 0 auto 10px auto;
+		border-radius: 3px;
+	}
+	.menu li a{
+		width: 100%;
+		text-align: center;
+	}
+}
+/* 內容 */
+.content{
+	float: left;
+	width: 75%;
+	border: 2px solid black;
+	padding: 10px;
+}
+.content h2{
+	font-weight: bold;
+	font-size: 26px;
+	padding: 30px 0 20px 0;
+}
+.content p{
+	line-height: 1.8;
+	letter-spacing: 1pt;
+	padding-bottom: 30px;
+}
+@media(max-width:768px){
+	.content{
+		border: none;
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+}
+/* 圖片 */
+.sidebar{
+	float: right;
+	width: 20%;
+	border: 2px solid black;
+	padding: 5px;
+	margin-left: 5%;
+}
+.sidebar img{
+	margin-bottom: 10px;
+}
+@media(max-width:768px){
+	.sidebar{
+		border: none;
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+	.sidebar img{
+		display: block;
+		max-width: 90%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+}
+/* 表尾 */
+.footer{
+	clear: both;
+	padding: 1em 0;
+	text-align: center;
+}

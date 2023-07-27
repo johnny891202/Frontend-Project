@@ -1,0 +1,19 @@
+.wrap{
+	max-width: 800px;
+	margin: 0 auto;
+}
+.menu{
+	width: 160px;
+	float: left;
+	background: black;
+	padding-top: 10px;
+}
+.menu li{
+	margin-bottom: 20px;
+	color: white;
+}
+.content{
+	background: orange;
+	color: white;
+	margin-left: 170px;
+}

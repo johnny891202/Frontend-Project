@@ -1,0 +1,11 @@
+.title{
+    color: black;
+}
+@media(min-width:375px){
+    .title{
+        color: red;
+    }
+    .content{
+        font-size: 25px;
+    }
+}

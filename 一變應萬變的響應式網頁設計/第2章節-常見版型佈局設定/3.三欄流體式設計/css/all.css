@@ -1,0 +1,28 @@
+.wrap {
+	max-width: 960px;
+	padding-top: 20px;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+.news h2 {
+	color: #000000;
+	padding: .3em 0;
+	font-size: 20px
+}
+.news li {
+	width: 31.33333%;
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-bottom: 1em;
+	float: left;
+}
+@media (max-width:768px) {
+	.news li {
+		width: 48%
+	}
+}
+@media (max-width:569px) {
+	.news li {
+		width: 98%
+	}
+}
