@@ -1,0 +1,88 @@
+/* 全域 */
+body{
+    background: #0F222B;
+    color: #69Ca62;
+}
+a{
+    text-decoration: none;
+    color: #69Ca62;
+}
+.wrap{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #69Ca62;
+    padding: 1em 0;
+}
+/* LOGO */
+.logo{
+    background: url(../images/logo.png);
+    display: block;
+    width: 170px;
+    height: 36px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* 選單 */
+.menu{
+    display: flex;
+}
+.menu a{
+    display: block;
+    padding: 1em;
+}
+.menu a:hover,.showmenu:hover{
+    background: #69Ca62;
+    color: #0F222B;
+}
+.content{
+    margin-top: 20px;
+    padding: 0 10px;
+}
+.content p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+.showmenu{
+    padding: 1em;
+    display: none;
+}
+@media(max-width:767px){
+    .header{
+        position: fixed;
+        top:0;
+        width: 100%;
+        background: #0F222B;
+    }
+    .content{
+        padding-top: 81px;
+    }
+    .showmenu{
+        display:block;
+    }
+    .menu{
+        /* 隱藏選單開始 */
+        max-height: 0px;
+        overflow: hidden;
+        /* 隱藏選單結束 */
+        transition: max-height  2.3s;
+        margin-top: 1px;
+        position:absolute;
+        z-index: 100;
+        top:81px;
+        flex-direction: column;
+        background: #0F222B;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .menu-show .menu{
+        max-height: 500px;
+    }
+}
