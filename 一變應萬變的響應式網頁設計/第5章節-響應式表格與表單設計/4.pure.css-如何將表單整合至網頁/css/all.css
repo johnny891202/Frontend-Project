@@ -1,0 +1,98 @@
+/* 全域 */
+a{
+    text-decoration: none;
+}
+.wrap{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: #f9eddf;
+}
+.header h1{
+    margin: 10px 0 0 0;
+}
+/* LOGO */
+.logo{
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    margin: 10px 0 10px 10px;
+}
+/* 選單 */
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu a{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    padding: 20px;
+    border-bottom: 3px solid transparent;
+}
+.menu a:hover{
+    border-bottom: 3px solid black;
+}
+/* 登入頁面 */
+.login{
+    width: 50%;
+    margin: 50px auto 0 auto;
+}
+.login h2{
+    font-size: 36px;
+    line-height: 1.25;
+}
+.login p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.login h2,.login p{
+    color: #6d4c41;
+    font-weight: bold;
+    text-align: center;
+}
+.form-login .pure-form-stacked{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.2);
+    padding: 0 5%;
+}
+.form-login .pure-form-stacked .form-text{
+    margin: 0.75em 0;
+    width: 100%;
+}
+.forget-password{
+    display: block;
+    color: #6d4c41;
+    margin-bottom: 20px;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+}
+.button .login-button{
+    background: #ffe4c4;
+    color: black;
+    width: 40%;
+}
+.button .register-button{
+    background: #90a4ae;
+    color: black;
+    width: 40%;
+}
+/* 表尾 */
+.footer{
+    background: #f9eddf;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.footer a{
+    font-size: 36px;
+    color: black;
+}
