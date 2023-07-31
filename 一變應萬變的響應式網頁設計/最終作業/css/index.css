@@ -1,7 +1,7 @@
 /* 特色介紹 */
 .feature{
     color: #3D1101;
-    padding: 50px 60px;
+    padding: 50px 30px;
 }
 .feature h3{
     position: relative;
@@ -31,9 +31,10 @@
 .feature ul{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 .feature ul li{
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,6 +48,14 @@
     margin-bottom: 10px;
     font-size: 20px;
 }
+@media(max-width:768px){
+    .feature h3::before{
+        left: 15%;
+    }
+    .feature h3::after{
+        right: 15%;
+    }
+}
 /* 主廚介紹 */
 .today-chef{
     background: #3D1101;
@@ -56,13 +65,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left:40px;
+    padding: 0 30px;
 }
 .today-chef img{
+    width: 50%;
     margin-right: 25px;
 }
 .today-chef-info{
-    padding-right: 30px;
+    width: 45%;
 }
 .today-chef h3{
     font-size: 20px;
@@ -75,6 +85,19 @@
     font-size: 18px;
     line-height: 1.25;
 }
+@media(max-width:768px){
+    .today-chef .container{
+        align-items: stretch;
+        padding: 0;
+    }
+    .today-chef img{
+        object-fit: cover;
+    }
+    .today-chef-info{
+        padding: 50px 0;
+    }
+}
+
 /* 回饋 */
 .feedback{
     color: #3D1101;
@@ -90,7 +113,7 @@
     justify-content: space-around
 }
 .feedback-list li{
-    width: 31%;
+    width: 33.33333%;
     display: flex;
     align-items: flex-start;
 }
@@ -110,11 +133,19 @@
     display: block;
     text-align: right;
 }
+@media(max-width:768px){
+    .feedback{
+        padding: 50px 10px;
+    }
+}
 /* 訂位 */
 .reserve{
     background: rgba(250,250,250,0.70);
     color: #3D1101;
-    padding: 50px 40px;
+    padding: 50px 0;
+}
+.reserve .container{
+    padding: 40px;
 }
 .reserve h3{
     font-size: 24px;
@@ -123,4 +154,46 @@
 }
 .reserve-content{
     display: flex;
+}
+.reserve-content img{
+    margin-right: 20px;
+}
+.reserve-content form{
+    width: 49%;
+}
+.reserve-content .reserve-info input{
+    width: 100%;
+}
+.reserve-content .pure-form-stacked .reserve-info label{
+    margin: 0 0 6px 0;
+}
+.reserve-content .pure-form-stacked .reserve-info .form-text{
+    margin: 0 0 12px 0;
+}
+.reserve-content .reserve-food{
+    margin-bottom: 28px;
+}
+.reserve-content .reserve-food label{
+    display: inline;
+    margin-right: 36px;
+}
+.reserve-content .button{
+    text-align: end;
+    border-radius: 3%;
+}
+
+.reserve-content .button .gray{
+    background: rgba(0,0,0,0.35);
+}
+.reserve-content .button .orange{
+    background: #F56C23;
+}
+@media(max-width:768px){
+    .reserve-content img{
+        width: 48%;
+        object-fit: cover;
+    }
+    .reserve .container{
+        padding: 2%;
+    }
 }

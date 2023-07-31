@@ -102,6 +102,19 @@ body{
 .footer-list p{
     letter-spacing: 1.25px;
 }
+@media(max-width:768px){
+    .footer-list{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .footer-list >li{
+        width: 45%;
+        margin: 0 2.5% 5% 0;
+    }
+    .footer-list .logo-list{
+        margin: 0;
+    }
+}
 /* 聯絡方式 */
 .contact-info li{
     margin-bottom: 5px;
