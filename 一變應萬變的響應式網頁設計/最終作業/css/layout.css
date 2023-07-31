@@ -51,6 +51,38 @@ body{
 .header .menu a:hover{
     border-bottom: 3px solid white;
 }
+.show-menu{
+    color: white;
+    display: none;
+    margin-right:10px;
+}
+@media(max-width:576px){
+    .header .menu{
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height  2.3s;
+        position: absolute;
+        z-index: 100;
+        top: 67px;
+        flex-direction: column;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .header .menu a{
+        background: rgba(0,0,0,0.75);
+    }
+    .header .menu a:hover{
+        background: white;
+        color: black;
+    }
+    .show-menu{
+        display: block;
+    }
+    .menu-show .menu{
+        max-height: 500px;
+    }
+}
 /* 橫幅 */
 .banner{
     background:url(../images/header_desktop.png) no-repeat;
@@ -107,12 +139,24 @@ body{
         flex-wrap: wrap;
         justify-content: flex-end;
     }
-    .footer-list >li{
+    .footer-list > li{
         width: 45%;
         margin: 0 2.5% 5% 0;
     }
     .footer-list .logo-list{
         margin: 0;
+    }
+}
+@media(max-width:576px){
+    .footer-list{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .footer-list > li{
+        align-items: center;
+        width: 80%;
+        margin: 0 10% 5% 10%;
     }
 }
 /* 聯絡方式 */
