@@ -1,0 +1,150 @@
+/* 全域 */
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+body{
+    background: #efe9e7;
+}
+.wrap .header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0,0,0,0.75);
+}
+.header .container{
+    
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* LOGO */
+
+.header .logo a{
+    display: block;
+    background: url(../images/logo_w\(null\).svg) no-repeat;
+    width: 120px;
+    height: 24px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 40px;
+}
+/* 選單 */
+.header .menu{
+    display: flex;
+    margin-right: 30px;
+}
+
+.header .menu a{
+    color: white;
+    display: block;
+    padding: 18px 15px;
+    border-bottom: 3px solid transparent;
+    font-size: 20px;
+}
+.header .menu a:hover{
+    border-bottom: 3px solid white;
+}
+/* 橫幅 */
+.banner{
+    background:url(../images/header_desktop.png) no-repeat;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content{
+    background: rgba(0,0,0,0.35);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px 6px 30px;
+}
+.banner-content h2{
+    margin-bottom: 16px;
+}
+.banner-content span{
+    font-size: 48px;
+}
+.banner-content p{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* 表尾 */
+.footer{
+    color: #3D1101;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+.footer-list > li{
+    width: 31.33333%;
+}
+.footer-list h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.footer-list p{
+    letter-spacing: 1.25px;
+}
+/* 聯絡方式 */
+.contact-info li{
+    margin-bottom: 5px;
+    list-style-type: disc;
+}
+.contact-info a{
+    color: #3D1101;
+}
+.contact-info a:hover{
+    opacity: 0.5;
+}
+/* Footer Logo */
+.logo-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.logo-list h3 a{
+    display: block; 
+    background: url(../images/logo_l@svg.svg) no-repeat;
+    width: 243px;
+    height: 48px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.logo-list a:hover{
+    opacity: 0.5;
+}
+.logo-list ul{
+    display: flex;
+    justify-content: end;
+}
+.logo-list li{
+    margin-left: 12px;
+}
+.logo-list .google a{
+    color: #DB4437;
+}
+.logo-list .twitter a{
+    color: #41ABE1;
+}
+.logo-list .facebook a{
+    color: #3A5795;
+}

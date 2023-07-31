@@ -1,0 +1,112 @@
+/* 特色介紹 */
+.feature{
+    color: #3D1101;
+    padding: 50px 60px;
+}
+.feature h3{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 30px
+}
+.feature h3::before{
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 110px;
+    height: 1px;
+    background: #979797;
+}
+.feature h3::after{
+    content:"";
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    width: 110px;
+    height: 1px;
+    background: #979797;
+}
+.feature ul{
+    display: flex;
+    justify-content: space-between;
+}
+.feature ul li{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feature img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.feature h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+/* 主廚介紹 */
+.today-chef{
+    background: #3D1101;
+    color: white;
+}
+.today-chef .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:40px;
+}
+.today-chef img{
+    margin-right: 25px;
+}
+.today-chef-info{
+    padding-right: 30px;
+}
+.today-chef h3{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.today-chef span{
+    font-size:16px;
+}
+.today-chef p{
+    font-size: 18px;
+    line-height: 1.25;
+}
+/* 回饋 */
+.feedback{
+    color: #3D1101;
+    padding: 50px 40px;
+}
+.feedback h3{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.feedback-list{
+    display: flex;
+    justify-content: space-around
+}
+.feedback-list li{
+    width: 31%;
+    display: flex;
+    align-items: flex-start;
+}
+.feedback-list img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.feedback-content h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.feedback-content p{
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.feedback-content span{
+    display: block;
+    text-align: right;
+}
