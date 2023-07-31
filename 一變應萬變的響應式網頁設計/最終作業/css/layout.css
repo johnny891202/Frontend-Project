@@ -174,12 +174,14 @@ body{
         align-items: center;
     }
     .footer-list > li{
-        align-items: center;
         width: 80%;
         margin: 0 10% 5% 10%;
     }
 }
 /* 聯絡方式 */
+.contact-info{
+    padding-left:20px;
+}
 .contact-info li{
     margin-bottom: 5px;
     list-style-type: disc;
