@@ -15,8 +15,8 @@ body{
     z-index: 100;
     background: rgba(0,0,0,0.75);
 }
-.header .container{
-    
+.header .header-container{
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -111,7 +111,27 @@ body{
     margin-bottom: 10px;
     font-size: 24px;
 }
-
+@media(max-width:576px){
+    .banner{
+        background: url(../images/header_mobile.png);
+    }
+    .banner-content{
+        padding: 0;
+    }
+    .banner-content h2{
+        line-height: 1.25;
+    }
+    .banner-content span{
+        font-size: 36px;
+    }
+    .banner-content p{
+        font-size: 16px;
+    }
+    .banner-content span{
+        display: block;
+        text-align: center;
+    }
+}
 /* 表尾 */
 .footer{
     color: #3D1101;

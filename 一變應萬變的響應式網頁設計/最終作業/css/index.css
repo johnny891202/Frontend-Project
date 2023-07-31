@@ -56,6 +56,25 @@
         right: 15%;
     }
 }
+@media(max-width:576px){
+    .container{
+        max-width: 320px;
+    }
+    .feature h3::before,.feature h3::after{
+        display: none;
+    }
+    .feature ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature ul li{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .feature p{
+        line-height: 1.5;
+    }
+}
 /* 主廚介紹 */
 .today-chef{
     background: #3D1101;
@@ -97,6 +116,20 @@
         padding: 50px 0;
     }
 }
+@media(max-width:576px){
+    .today-chef .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .today-chef img{
+        width: 100%;
+        margin: 0;
+    }
+    .today-chef-info{
+        width: 100%;
+        padding: 30px 0;
+    }
+}
 
 /* 回饋 */
 .feedback{
@@ -136,6 +169,14 @@
 @media(max-width:768px){
     .feedback{
         padding: 50px 10px;
+    }
+}
+@media(max-width:576px){
+    .feedback-list{
+        flex-direction: column;
+    }
+    .feedback-list li{
+        width: 100%;
     }
 }
 /* 訂位 */
@@ -195,5 +236,21 @@
     }
     .reserve .container{
         padding: 2%;
+    }
+}
+@media(max-width:576px){
+    .reserve-content{
+        flex-direction: column;
+    }
+    .reserve-content img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .reserve-content form{
+        width: 100%;
+    }
+    .reserve-content .button{
+        display: flex;
+        justify-content: space-between;
     }
 }
