@@ -12,6 +12,7 @@
     display: block;
     color: gray;
     font-weight: bold;
+    font-size: 20px;
 }
 .list a:hover{
     background: gray;
