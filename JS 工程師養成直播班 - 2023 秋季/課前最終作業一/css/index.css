@@ -1,0 +1,82 @@
+.wrap{
+    max-width: 1296px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+/* 個人圖片 */
+.header h1{
+    font-size: 128px;
+    letter-spacing: 0.12em;
+    margin-top: 160px;
+}
+.header img{
+    display: block;
+    margin: 0 auto;
+}
+.header p{
+    font-size: 128px;
+    letter-spacing: 0.12em;
+    text-align: right;
+}
+/* 自我介紹 */
+.introduce{
+    background: #EFEFEF;
+    padding: 48px 0;
+    height: 432px;
+}
+.introduce p{
+    font-size: 32px;
+    width: 636px;
+    margin-left: auto;
+    padding-right: 50px;
+}
+/* 個人資訊 */
+.info{
+    padding: 80px 660px 160px 0;
+}
+.info h2{
+    color: #AE0000;
+    font-size: 40px;
+    border-bottom: 3px solid #AE0000;
+    margin-bottom: 16px;
+}
+.info li{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.info li a{
+    color: #000;
+    text-decoration: none;
+}
+.info li a:hover{
+    opacity: 0.5;
+}
+.info span{
+    color: #949494;
+    font-size: 20px;
+    font-style: italic;
+}
+.education{
+    margin-top: 32px;
+}
+.info .education li,.info .work li{
+    margin-bottom: 16px;
+}
+.work,.awards{
+    margin-top: 24px;
+}
+.info .awards li{
+    margin-bottom: 12px;
+}
+/* 表尾 */
+.footer{
+    background: #000;
+    text-align: center;
+    padding: 64px 0;
+}
+.footer a{
+    margin: 0 20px;
+}
+.footer a:hover{
+    opacity: 0.5;
+}

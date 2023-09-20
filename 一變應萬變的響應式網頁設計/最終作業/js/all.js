@@ -3,4 +3,9 @@ $(document).ready(function () {
         e.preventDefault();
         $("body").toggleClass("menu-show");
     });
+    $(".fa-heart").click(function (e) { 
+        e.preventDefault();
+        $(this).toggleClass("fas");
+    });
 });
+

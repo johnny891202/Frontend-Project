@@ -1,0 +1,16 @@
+:root{
+    --primary:  #69F0AE;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid #eee;
+}
+.bg-primary{
+    background: var(--primary);
+}
+.local{
+    --primary:pink;
+}
