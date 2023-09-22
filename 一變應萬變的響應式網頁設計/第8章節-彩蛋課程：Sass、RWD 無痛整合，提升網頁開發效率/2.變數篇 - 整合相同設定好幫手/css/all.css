@@ -1,0 +1,14 @@
+.header a {
+  color: red;
+  font-size: 32px;
+}
+
+.content a {
+  color: red;
+  font-size: 12px;
+}
+
+.footer a {
+  color: red;
+  font-size: 16px;
+}

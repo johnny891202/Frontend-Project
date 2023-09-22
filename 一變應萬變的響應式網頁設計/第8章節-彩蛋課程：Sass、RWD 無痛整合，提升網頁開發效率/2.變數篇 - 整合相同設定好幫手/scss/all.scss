@@ -1,0 +1,23 @@
+//變數使用$開頭
+$linkcolor: red;
+$font-big: font-middle * 2;
+$font-middle: 16px;
+$font-small: font-middle * 0.75;
+.header{
+    a{
+        color: $linkcolor;
+        font-size: $font-big;
+    }
+}
+.content{
+    a{
+        color: $linkcolor;
+        font-size: $font-small;
+    }
+}
+.footer{
+    a{
+        color: $linkcolor;
+        font-size: $font-middle;
+    }
+}

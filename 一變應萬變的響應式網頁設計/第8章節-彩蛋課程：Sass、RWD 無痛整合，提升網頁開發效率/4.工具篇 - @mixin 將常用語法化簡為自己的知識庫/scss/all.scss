@@ -1,0 +1,12 @@
+//mixin可以將記不住的程式碼變成自己的工具
+//載入mixin要使用@include
+@mixin hide-text{
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+.header h1{
+    @include hide-text;
+    
+}

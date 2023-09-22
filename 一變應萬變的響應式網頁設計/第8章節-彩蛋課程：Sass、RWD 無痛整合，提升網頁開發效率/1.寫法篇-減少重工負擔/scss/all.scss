@@ -1,0 +1,15 @@
+//scss寫法篇-減少重工負擔
+.header{
+    width: 50px;
+    height: 50px;
+    background: black;
+    ul{
+        width: 500px;
+    }
+    li{
+        height: 30px;
+        a{
+            color: black;
+        }
+    }
+}
