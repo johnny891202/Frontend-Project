@@ -4,9 +4,9 @@ body{
 /* 導覽列 */
 .header{
     position: fixed; //將導覽列固定在上方
-        width: 100%;
-        z-index: 100;
-        background: $navbar-bg;
+    width: 100%;
+    z-index: 100;
+    background: $navbar-bg;
     .navbar{
         position: relative;
         display: flex;
@@ -31,6 +31,7 @@ body{
             @include tablet{
                 margin-right: 0px;
             }
+            //在手機上隱藏選單
             @include mobile{
                 display: none;
                 position: absolute;

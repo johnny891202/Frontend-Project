@@ -289,3 +289,70 @@ body {
 .footer-logo ul .facebook a {
   color: #3a5795;
 }
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3d1101;
+  padding: 50px 0;
+}
+.feature h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.feature h3::before {
+  content: "";
+  position: absolute;
+  background: #3d1101;
+  top: 45%;
+  left: -70%;
+  height: 2px;
+  width: 150px;
+}
+.feature h3::after {
+  content: "";
+  position: absolute;
+  background: #3d1101;
+  top: 45%;
+  right: -70%;
+  height: 2px;
+  width: 150px;
+}
+.feature .feature-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .feature .feature-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.feature .feature-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 27.33333%;
+}
+@media (max-width: 768px) {
+  .feature .feature-list li {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}
+.feature .feature-list li img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.feature .feature-list li p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.feature .feature-list li span {
+  font-size: 18px;
+}
