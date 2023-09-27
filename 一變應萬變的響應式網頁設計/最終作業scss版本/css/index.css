@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* 首頁開始 */
+/* 特色 */
 .feature {
   display: flex;
   flex-direction: column;

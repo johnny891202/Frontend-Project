@@ -1,0 +1,236 @@
+/* 線上訂購頁面開始*/
+.project{
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-between;
+    @include tablet{
+        padding: 50px 20px;
+    }
+    @include mobile{
+        flex-direction: column;
+        padding: 50px 40px;
+    }
+    .category{
+        width: 22.5%;
+        @include tablet{
+            width: 32.5%;
+        }
+        @include mobile{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        a{
+            color: $primary-text;
+        }
+        >a{
+            font-size: $text-2xl;
+            line-height: 32px;
+            margin-bottom: 15px;
+        }
+        >a:before{
+            margin-right: 15px;
+        }
+        ul{
+            li{
+                border-bottom: 1px solid $primary-text;
+                a{
+                    display: block;
+                    line-height: 32px;
+                    font-size: $text-xl;
+                    padding-left: 10px;
+                }
+                a:hover{
+                    background: $primary-text;
+                    color: $white-text;
+                }
+            }
+        }
+    }
+    .content{
+        width: 72.5%;
+        @include tablet{
+            width: 62.5%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+        .topbar{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            a:hover{
+                opacity: 0.5;
+            }
+            @include tablet{
+                flex-direction: column;
+                align-items: end;
+            }
+            //搜尋欄
+            .search{
+                width: 70%;
+                display: flex;
+                @include tablet{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                input{
+                    width: 90%;
+                    border: 2px 0px 2px 2px solid $primary-text;
+                    background: $primary-bg;
+                    padding: 5.5px 0 5.5px 5px;
+                    font-size: $text-l;
+                    @include tablet{
+                        width: 100%;
+                    }
+                }
+                a{
+                    display: block;
+                    background: $primary-text;
+                    color: $white-text;
+                    padding: 8px 10px;
+                }
+            }
+            //購物車
+            .cart{
+                display: flex;
+                align-items: center;
+                a{
+                    font-size: $text-xl;
+                    color: $primary-text;
+                    display: block;
+                }
+                a:first-child{
+                    padding: 0 15px 0 0;
+                    margin-right: 15px;
+                    border-right: 2px solid $primary-text;
+                }
+                .shopping-cart{
+                    position: relative;
+                    span{
+                        display: block;
+                        position: absolute;
+                        font-size: $text-s;
+                        background: $orange-text;
+                        color: $white-text;
+                        text-align: center;
+                        border-radius: 50%;
+                        padding: 2px 5px;
+                        top:-10px;
+                        right: -10px;
+                    }
+                }
+            }
+        }
+        //產品列表
+        .project-item{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li{
+                position: relative;
+                width: 49%;
+                box-shadow: 3px 3px 4px 0 rgba(0,0,0,0.16);
+                margin-bottom: 30px;
+                @include mobile{
+                    width: 100%;
+                }
+                a{
+                    position: absolute;
+                    color: $white-text;
+                    top: 10px;
+                    left: 10px;
+                    font-size: $text-2xl;
+                }
+                .ribbon-wrap{
+                    overflow: hidden;
+                    width: 90px;
+                    height: 90px;
+                    position: absolute;
+                    top: -6px;
+                    right: -6px;
+                    .ribbon{
+                        position: absolute;
+                        top: 16px;
+                        right: -32px;
+                        transform: rotate(45deg);
+                        width: 120px;
+                        height: 24px;
+                        line-height: 24px;
+                        background: #0c9;
+                        color: #fff;
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                }
+                .ribbon-wrap::before{
+                    content: "";
+                    position: absolute;
+                    border-bottom: 6px solid #029e77;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    left: 12px;
+                }
+                .ribbon-wrap::after{
+                    content: "";
+                    position: absolute;
+                    border-top: 6px solid transparent;
+                    border-left: 6px solid #029e77;
+                    border-right: 6px solid transparent;
+                    bottom: 18px;
+                    right: -6px;
+                }
+                img{
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center;
+                }
+                .item-content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: $primary-text;
+                    padding: 10px 0 10px 0;
+                    h4{
+                        font-size: $text-xl;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        position: relative;
+                        padding-bottom: 10px;
+                        margin-bottom: 20px;
+                    }
+                    p:after{
+                        content: "";
+                        position: absolute;
+                        background: $primary-text;
+                        height: 2px;
+                        width: 90px;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    span{
+                        display: block;
+                        font-size: $text-2xl;
+                        margin-bottom: 20px;
+                    }
+                    button{
+                        display: block;
+                        width: 90%;
+                        color: $orange-text;
+                        border: 2px solid $orange-text;
+                        border-radius: 5px;
+                        padding: 2.5px 0;
+                        font-size: $text-l;
+                    }
+                    button:hover{
+                        background: $orange-text;
+                        color: $white-text;
+                    }
+                }
+            }
+        }
+    }
+}
+/* 線上訂購頁面結束*/

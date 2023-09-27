@@ -1,40 +1,57 @@
+/* 首頁開始 */
+/* 特色 */
 .feature{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: $primary-text;
     padding: 50px 0;
     h3{
-        font-size: $text-2xl;
-        font-weight: bold;
-        text-align: center;
-        line-height: 32px;
         position: relative;
-        margin-bottom: 30px;
+        text-align: center;
+        font-size: $text-3xl;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        @include tablet{
+            font-size: $text-2xl;
+        }
     }
     //偽元素，標題左右邊的橫線
     h3::before{
         content: "";
         position: absolute;
         background: $primary-text;
-        top: 45%;
-        left: -70%;
         height: 2px;
-        width: 150px;
+        width: 12.5%;
+        top: 45%;
+        left: 25%;
+        @include tablet{
+            width: 20%;
+            left: 5%;
+        }
+        @include mobile{
+            display: none;
+        }
     }
     h3::after{
         content: "";
         position: absolute;
         background: $primary-text;
-        top: 45%;
-        right: -70%;
         height: 2px;
-        width: 150px;
+        width: 12.5%;
+        top: 45%;
+        right: 25%;
+        @include tablet{
+            width: 20%;
+            right: 5%;
+        }
+        @include mobile{
+            display: none;
+        }
     }
+    //介紹
     .feature-list{
         display: flex;
         justify-content: space-evenly;
-        @include tablet{
+        @include mobile{
             flex-direction: column;
             align-items: center;
         }
@@ -42,8 +59,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width:27.33333%;
+            width: 25.33333%;
             @include tablet{
+                width: 31.33333%;
+            }
+            @include mobile{
                 width: 90%;
                 margin-bottom: 30px;
             }
@@ -51,13 +71,211 @@
                 border-radius: 50%;
                 margin-bottom: 20px;
             }
-            p{
+            h4{
                 font-size: $text-xl;
+                font-weight: bold;
                 margin-bottom: 10px;
+                @include tablet{
+                    font-size: $text-l;
+                }
             }
-            span{
+            p{
                 font-size: $text-l;
             }
         }
     }
 }
+/* 今日主廚 */
+.chef{
+    background: $primary-text;
+    color: $white-text;
+    .container{
+        max-width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        @include tablet{
+            align-items: stretch;
+            padding: 0 10px;
+        }
+        @include mobile{
+            flex-direction: column;
+        }
+        img{
+            width: 50%;
+            margin-right: 25px;
+            @include tablet{
+                object-fit: cover;
+            }
+            @include mobile{
+                width: 100%;
+                margin-right: 0px;
+            }
+        }
+        .chef-info{
+            width: 45%;
+            padding: 50px 0;
+            @include tablet{
+                padding: 30px 0;
+            }
+            @include mobile{
+                width: 100%;
+                padding: 30px;
+            }
+            h3{
+                font-size: $text-2xl;
+                font-weight: bold;
+                margin-bottom: 16px;
+            }
+            p{
+                font-size: $text-xl;
+                line-height: 1.25;
+            }
+        }
+    }
+}
+/* 感想 */
+.feedback{
+    color: $primary-text;
+    padding: 50px 0;
+    h3{
+        text-align: center;
+        font-size: $text-3xl;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .feedback-list{
+        display: flex;
+        justify-content: space-evenly;
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+        }
+        li{
+            display: flex;
+            align-items: flex-start;
+            width: 31.33333%;
+            @include mobile{
+                width: 95%;
+                justify-content: start;
+            }
+            img{
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            .feedback-content{
+                h4{
+                    font-size: $text-xl;
+                    margin:20px 0;
+                }
+                p{
+                    font-size: $text-l;
+                    line-height: 24px;
+                    margin-bottom: 15px;
+                }
+                span{
+                    font-size: $text-l;
+                    display: block;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+/* 訂位 */
+.reserve{
+    background: rgba(250,250,250,0.70);
+    color: $primary-text;
+    padding: 50px 40px;
+    @include tablet{
+        padding: 50px 10px;
+    }
+    h3{
+        font-size: $text-3xl;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+    .reserve-content{
+        display: flex;
+        justify-content: space-between;
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+        }
+        img{
+            width: 45%;
+            @include mobile{
+                width: 90%;
+                margin-bottom: 30px;
+            }
+        }
+        form{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @include mobile{
+                width: 90%;
+            }
+            .user{
+                display: flex;
+                flex-direction: column;
+                label{
+                    font-size: $text-l;
+                    font-weight: bold;
+                    margin-bottom: 6px;
+                }
+                .user-input{
+                    padding: 5.5px 15px;
+                    font-size: $text-l;
+                    margin-bottom: 12px;
+                    border-radius: 3px;
+                    border: 1px solid #CCCCCC;
+                    box-shadow: inset 0px 1px 0px 0px #ECECEC;;
+                }
+                p{
+                    font-size: $text-l;
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                }
+                .vegan{
+                    margin-bottom: 20px;
+                    label{
+                        margin-right: 30px;
+                    }
+                }
+            }
+            .reserve-btn{
+                display:flex;
+                justify-content: end;
+                align-items: end;
+                input{
+                    font-size: $text-l;
+                    font-weight: bold;
+                    color: $white-text;
+                    padding: 5px 70px;
+                    margin-left: 10px;
+                    border: none;
+                    border-radius: 3px;
+                    @include tablet{
+                        padding: 5px 50px;
+                    }
+                }
+                input:hover,input:active{
+                    opacity: 0.5;
+                    cursor: pointer;
+                }
+                .cancel{
+                    background: rgba(0,0,0,0.35);
+                }
+                .submit{
+                    background: $btn-orange;
+                }
+            }
+        }
+    }
+}
+/* 首頁結束 */

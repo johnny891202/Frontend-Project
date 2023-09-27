@@ -26,11 +26,13 @@
         <div class="header">
             <div class="navbar">
                 <!-- LOGO -->
-                <h1><a href="index.html">六角西餐廳</a></h1>
-                <!-- MENU -->
+                <h1 class="logo">
+                    <a href="index.html">六角西餐廳</a>
+                </h1>
+                <!-- 選單 -->
                 <ul class="menu">
                     <li><a href="index.html">首頁</a></li>
-                    <li><a href="shopping.html">線上訂單</a></li>
+                    <li><a href="shopping.html">線上訂餐</a></li>
                     <li><a href="login.html">登入</a></li>
                 </ul>
                 <a href="#" class="show-menu"><i class="fa-solid fa-bars fa-2x"></i></a>
@@ -40,10 +42,43 @@
         <div class="banner">
             <div class="solgan">
                 <h2>
-                    <span>咬一口就無法忘懷的漢堡</span>
+                    <span>咬一口</span>
+                    <span>就無法忘懷的漢堡</span>
                 </h2>
                 <p>七夕絕對無法錯過的好滋味</p>
-                <p><i class="fa-solid fa-utensils"></i>六角大漢堡<i class="fa-solid fa-utensils"></i></p>
+                <p>
+                    <i class="fa-solid fa-utensils"></i>
+                    六角大漢堡
+                    <i class="fa-solid fa-utensils"></i>
+                </p>
+            </div>
+        </div>
+        <!-- 登入 -->
+        <div class="login">
+            <div class="login-solgan">
+                <h2>六角西餐廳</h2>
+                <p>享受美食好味道</p>
+            </div>
+            <div class="login-form">
+                <h3>LOGIN</h3>
+                <!-- 表單 -->
+                <form>
+                    <label for="email">Email Address*</label>
+                    <div class="input-group">
+                        <input type="mail" id="email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <label for="password">Password*</label>
+                    <div class="input-group">
+                        <input type="password" id="password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <a class="forget" href="#">忘記密碼?</a>
+                    <div class="login-btn">
+                        <a class="register" href="register.html">註冊</a>
+                        <a class="submit" href="#">登入</a>
+                    </div>
+                </form>
             </div>
         </div>
         <!-- 表尾 -->
@@ -64,7 +99,7 @@
                     </ul>
                 </li>
             </ul>
-            <!-- Footer Logo -->
+            <!-- Footer LOGO -->
             <div class="footer-logo">
                 <h3>
                     <a href="index.html">六角西餐廳</a>
