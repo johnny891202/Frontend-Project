@@ -1,0 +1,52 @@
+{
+    "users": [
+        {
+            "name": "WeiZhe",
+            "email": "xxx@gmail.com"
+        }
+    ],
+    "todos": [],
+    "posts": [
+        {
+            "content": "今天要刷牙",
+            "id": 1
+        },
+        {
+            "content": "今天要刷牙",
+            "id": 2
+        },
+        {
+            "content": "今天要出門",
+            "id": 3
+        }
+    ],
+    "products":[
+        {
+            "name": "A產品",
+            "price": 500,
+            "language":{
+                "zh-tw":"A產品",
+                "en-us":"A product"
+            },
+            "id":1
+        },
+        {
+            "name": "B產品",
+            "price": 100,
+            "language":{
+                "zh-tw":"B產品",
+                "en-us":"B product"
+            },
+            "id":2
+        },
+        {
+            "name": "C產品",
+            "price": 900,
+            "language":{
+                "zh-tw":"C產品",
+                "en-us":"C product"
+            },
+            "id":3
+        }
+    ]
+}

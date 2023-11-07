@@ -1,0 +1,245 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 自己加上 */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* css reset結束 */
+.wrap {
+  width: 1920px;
+  margin: 0 auto;
+  /* 新增套票表單區 */
+  /* 搜尋內容區 */
+}
+.wrap .addTicket-panel {
+  max-width: 920px;
+  margin: 120px auto 100px auto;
+  padding: 60px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 12px;
+  /* 圖片區 */
+  /* 表單區 */
+}
+.wrap .addTicket-panel .logo {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrap .addTicket-panel .addTicket-form {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+}
+.wrap .addTicket-panel .addTicket-form h1 {
+  color: #00807E;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #00807E;
+  margin-bottom: 30px;
+}
+.wrap .addTicket-panel .addTicket-form h1 i {
+  font-size: 24px;
+}
+.wrap .addTicket-panel .addTicket-form h1 i::before {
+  margin-right: 6px;
+  font-size: 20px;
+}
+.wrap .addTicket-panel .addTicket-form .form-group li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.wrap .addTicket-panel .addTicket-form .form-group li label {
+  margin-right: 30px;
+  color: #00807E;
+  font-weight: bold;
+}
+.wrap .addTicket-panel .addTicket-form .form-group li input, .wrap .addTicket-panel .addTicket-form .form-group li select, .wrap .addTicket-panel .addTicket-form .form-group li textarea {
+  border: none;
+  border-bottom: 1px solid #00807E;
+  background-color: #F7F7F7;
+  color: #818A91;
+  width: 72%;
+  text-indent: 0.5rem;
+  font-size: 1rem;
+  min-height: 38px;
+}
+.wrap .addTicket-panel .addTicket-form .form-group li textarea {
+  min-height: 111px;
+  padding-top: 8px;
+}
+.wrap .addTicket-panel .addTicket-form .addTicket-btn {
+  border: none;
+  background: #00807E;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 20px;
+  padding: 10px 40px;
+}
+.wrap .addTicket-panel .addTicket-form .addTicket-btn:hover {
+  background: #004e4d;
+}
+.wrap .main-content {
+  background-color: #F7F7F7;
+  padding-bottom: 100px;
+  /* 搜尋欄 */
+}
+.wrap .main-content .search {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.wrap .main-content .search .regionSearch {
+  width: 27.5%;
+  min-height: 38px;
+  text-indent: 0.5rem;
+  color: #818A91;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-right: 2.5%;
+}
+.wrap .main-content .search p {
+  color: #818A91;
+}
+.wrap .main-content .ticketList {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrap .main-content .ticketList li {
+  width: 31.33333%;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  margin-bottom: 38px;
+  margin-right: 2%;
+}
+.wrap .main-content .ticketList li .ticketList-img {
+  position: relative;
+}
+.wrap .main-content .ticketList li .ticketList-img .ticketList-region, .wrap .main-content .ticketList li .ticketList-img .ticketList-rate {
+  position: absolute;
+  border-radius: 0 5px 5px 0;
+  color: #ffffff;
+  text-align: center;
+}
+.wrap .main-content .ticketList li .ticketList-img .ticketList-region {
+  background-color: #64C3BF;
+  padding: 12px 20px;
+  font-size: 20px;
+  top: -13px;
+  left: 0;
+}
+.wrap .main-content .ticketList li .ticketList-img .ticketList-rate {
+  background-color: #00807E;
+  padding: 8px 8px;
+  bottom: -10px;
+  left: 0;
+  min-width: 40px;
+  height: 32px;
+}
+.wrap .main-content .ticketList li .ticketList-content {
+  padding: 20px;
+}
+.wrap .main-content .ticketList li .ticketList-content .ticketList-description h3 a {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #00807E;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #00807E;
+  margin-bottom: 20px;
+}
+.wrap .main-content .ticketList li .ticketList-content .ticketList-description h3 a:hover {
+  color: #64C3BF;
+}
+.wrap .main-content .ticketList li .ticketList-content .ticketList-description p {
+  color: #818A91;
+  margin-bottom: 32px;
+  height: 144px;
+}
+.wrap .main-content .ticketList li .ticketList-content .ticketList-info {
+  display: flex;
+  align-items: center;
+  color: #00807E;
+  justify-content: space-between;
+}
+.wrap .main-content .ticketList li .ticketList-content .ticketList-info .ticketList-num {
+  font-weight: bold;
+}
+.wrap .main-content .ticketList li .ticketList-content .ticketList-info .ticketList-price {
+  display: flex;
+  align-items: center;
+}
+.wrap .main-content .ticketList li .ticketList-content .ticketList-info .ticketList-price span {
+  font-size: 32px;
+}
