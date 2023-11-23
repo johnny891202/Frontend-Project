@@ -1,0 +1,26 @@
+.wrap {
+  width: 1920px;
+  margin: 0 auto;
+}
+.wrap .addTicket-panel {
+  width: 920px;
+  margin: 120px auto 100px auto;
+  padding: 60px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrap .addTicket-panel .logo {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrap .addTicket-panel .addTicket-form {
+  width: 38%;
+}
+.wrap .addTicket-panel .addTicket-form h1 i {
+  font-size: 24px;
+}
+.wrap .addTicket-panel .addTicket-form h1 i::before {
+  margin-right: 6px;
+}

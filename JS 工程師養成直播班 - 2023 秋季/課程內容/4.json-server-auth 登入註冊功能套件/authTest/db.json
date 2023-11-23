@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "email": "ko891202@mail.com",
+      "password": "$2a$10$yQ1G/d2xAcNvjRjXqSbaye2hYESwDa2MPON7ZnlVCCeh8yqvHpsNW",
+      "nickName": "維哲",
+      "id": 1
+    },
+    {
+      "email": "ko8912022@mail.com",
+      "password": "$2a$10$fRd2nDZBSFNLOi7CGSW8.eWGGbjtQ313R2pS1KjGa7tDVE6h/4/dG",
+      "nickName": "維哲",
+      "id": 2
+    }
+  ],
+  "posts": [
+    {
+      "content": "今天要刷牙",
+      "id": 1
+    },
+    {
+      "content": "今天要洗臉",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "content": "今天要洗臉2",
+      "userId": "1",
+      "id": 3
+    }
+  ]
+}

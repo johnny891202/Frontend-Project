@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "維哲"
+    },
+    {
+      "id": 2,
+      "name": "琪珍"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "貼文一",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "貼文二",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "title": "貼文三",
+      "userId": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "維哲的留言",
+      "postId": 1,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "body": "琪珍的留言",
+      "postId": 1,
+      "userId": 2
+    },
+    {
+      "body": "今天天氣真好",
+      "userId": 2,
+      "postId": "1",
+      "id": 3
+    },
+    {
+      "body": "今天要刷牙",
+      "userId": "2",
+      "postId": "2",
+      "id": 4
+    },
+    {
+      "body": "昨天天氣真好",
+      "userId": "1",
+      "postId": "2",
+      "id": 5
+    }
+  ]
+}
